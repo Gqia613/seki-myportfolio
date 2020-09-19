@@ -1,0 +1,302 @@
+@media screen and (max-width: 479px) {
+
+    html body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .not-new-line {
+        display: none;
+    }
+
+    header {
+        background-image: url(../img/back1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+    }
+
+    header #background {
+        padding: 140px 0 40px 0;
+        height: 220px;
+        background-color: rgba(145, 179, 187, 0.5);
+    }
+
+    header .title {
+        text-align: center;
+    }
+
+    header .title h1 {
+        margin: 0;
+        font-size: 35px;
+    }
+
+    header .title p {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    header #background .column {
+        display: none;
+    }
+
+    header #background .header-list {
+        background-color: rgb(145, 179, 187);
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        height: 280px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 990;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    header #background .header-list a {
+        width: 100%;
+        padding: 20px 0 20px 20px;
+        border-bottom: solid 1px #fff;
+    }
+
+    header #background .header-list img {
+        width: 25px;
+        height: 25px;
+    }
+
+    header #background .header-list p {
+        margin-left: 30px;
+        display: inline;
+    }
+
+    header #background .header-list #close-btn {
+        margin: 0 auto;
+    }
+    
+    header #background .header-list button {
+        margin-top: 13px;
+        width: 150px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 5%;
+    }
+
+
+    .open {
+        background-color: rgb(145, 179, 187);
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        height: 280px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 990;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        transform: translateX(0);
+        display: block;
+    }
+
+    #drawer {
+       position: fixed;
+       top: 3px;
+       right: 3px;
+       width: 50px;
+       height: 50px;
+       background-color: rgb(145, 179, 187);
+       border-radius: 5%;
+    }
+
+    /* ハンバーガーメニュー */
+    .nav-drawer {
+        height: 3px;/*線の太さ*/
+        width: 40px;/*長さ*/
+        border-radius: 3px;
+        background: #555;
+        display: block;
+        content: '';
+        cursor: pointer;
+        margin: 10px 4px;
+    }
+
+
+    header #background .nav,.production1,.production2 {
+        display: none;
+    }
+
+    
+
+    #main {
+        width: 100%;
+        text-align: center;
+    }
+
+    #main .colorchange {
+        color: rgba(145, 179, 187, 0.6);
+    }
+
+    #main .title {
+        padding: 40px 0 15px 0;
+        font-size: 30px;
+    }
+
+
+    #main #information p {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    #main #information .flex {
+        border: 2px solid rgba(145, 179, 187, 0.6);
+        margin: 20px;
+        height: 372px;
+    }
+
+    #main #information .info1 {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background-color: rgba(145, 179, 187, 0.6);
+        /* background-color: #fff; */
+        border-radius: 50%;
+    }
+
+
+    #main #information .flex h2 {
+        padding-top: 40px;
+    }
+
+    #main #information .flex .myinfo,.history,.skill, .hobby {
+        margin: 30px 30px 0 30px;
+        text-align: left;
+    }
+
+    #main #performance {
+        padding-bottom: 50px;
+        background-color: rgba(145, 179, 187, 0.6);
+    }
+
+    #main #performance .title {
+        color: #fff;
+        padding-top: 60px;
+    }
+
+    #main #performance #flex-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main #performance #flex-wrap .myperformance {
+        width: 100%;
+    }
+    
+    #main #performance #flex-wrap .myperformance img{
+        width: 250px;
+        height: 400px;
+    }
+    
+    #main #performance #flex-wrap .myperformance p {
+        /* text-align: left; */
+        margin: 20px 20px 40px 20px;
+    }
+
+    #main #performance #flex-wrap .per-border {
+        width: 280px;
+        border-bottom: 2px solid #fff;
+        margin: 0 auto;
+    }
+
+    #main #conect #infocontents .information2 {
+        margin: 20px;
+        text-align: left;
+    }
+
+
+    .follow-me {
+        list-style: none;
+        margin: 0 0 -8px;
+        overflow: hidden;
+        padding: 0;
+    }
+    .follow-me li {
+        float: left;
+        margin: 0 8px 8px;
+        padding: 0;
+    }
+    .follow-me li a::before {
+        border-style: solid;
+        border-width: 1px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        color: #fff;
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 16px;
+        height: 42px; /* Button height */
+        line-height: 42px; /* Button height */
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        text-align: center;
+        width: 42px; /* Button width */
+    }
+    
+    .follow-me li a[href*="facebook.com"]::before       { border-color: #3b5998; background-color: #3b5998; content: "\f09a"; }
+    .follow-me li a[href*="twitter.com"]::before        { border-color: #55acee; background-color: #55acee; content: "\f099"; }
+    .follow-me li a:hover::before {
+        background-color: #fff;
+    }
+    .follow-me li a[href*="facebook.com"]:hover::before       { color: #3b5998; }
+    .follow-me li a[href*="twitter.com"]:hover::before        { color: #55acee; }
+
+    .follow-me li a::before {
+        -webkit-border-radius: 50%; /* for Android ~4.3 */
+        border-radius: 50%;
+        font-size: 16px;
+        height: 44px;
+        line-height: 44px;
+        width: 44px;
+    }
+
+    #main #conect .copyright {
+        margin: 30px 0;
+        color: rgb(145, 179, 187);
+    }
+
+    #page_top{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+        background: rgb(145, 179, 187);
+        opacity: 0.6;
+        border-radius: 5%;
+    }
+    #page_top a{
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+    }
+    
+    #page_top a::after{
+        content: 'PAGE TOP';
+        font-size: 13px;
+        color: #fff;
+        position: absolute;
+        top: 7px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+    }
+}
